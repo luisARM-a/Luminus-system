@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LUIS SYSTEM v5</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+<div class="system-container">
+
+
+<!-- HEADER -->
+
+<header class="system-header">
+
+<h1>PERSONAL OPERATING PANEL</h1>
+
+<p class="system-subtitle">LUIS SYSTEM v5.0</p>
+
+<div id="clock" class="clock-container">00:00:00</div>
+
+</header>
+
+
+
+<!-- ESTADO ACTUAL -->
+
+<section class="status-panel">
+
+<h2>ESTADO ACTUAL</h2>
+
+<div class="status-display">
+
+<span id="status-dot"></span>
+
+<span id="current-status">Inicializando sistema...</span>
+
+</div>
+
+<p id="time-remaining"></p>
+
+<p id="next-activity"></p>
+
+</section>
+
+
+
+<!-- HORARIO -->
+
+<section class="schedule-panel">
+
+<h2>HORARIO DEL DÍA</h2>
+
+<table class="schedule-table">
+
+<thead>
+
+<tr>
+
+<th>Hora</th>
+<th>Actividad</th>
+
+</tr>
+
+</thead>
+
+<tbody id="schedule-body">
+
+</tbody>
+
+</table>
+
+</section>
+
+
+
+<!-- RESULTADOS PUBLICOS -->
+
+<section class="results-panel">
+
+<h2>RESULTADOS</h2>
+
+<ul>
+
+<li>✔ Progreso en Prepa Abierta</li>
+
+<li>✔ Desarrollo constante en programación</li>
+
+<li>✔ Práctica diaria de piano</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- PROGRESO -->
+
+<section class="progress-panel">
+
+<h2>PROGRESO GENERAL</h2>
+
+<div class="progress-bar">
+
+<div id="progress-fill"></div>
+
+</div>
+
+<p id="progress-text"></p>
+
+</section>
+
+
+
+<!-- TERMINAL -->
+
+<section class="terminal-panel">
+
+<h2>JARVIS TERMINAL</h2>
+
+<div id="terminal" class="terminal-window"></div>
+
+<div class="terminal-input-line">
+
+<span class="terminal-prefix">></span>
+
+<input type="text" id="terminal-input" autocomplete="off">
+
+</div>
+
+</section>
+
+
+
+<!-- ACCESO PRIVADO -->
+
+<section class="control-panel">
+
+<button id="secure-access">Acceso Privado</button>
+
+</section>
+
+
+
+<!-- PANEL PRIVADO -->
+
+<section id="private-panel" class="private-panel hidden">
+
+<h2>PROTOCOLO DE METAS</h2>
+
+<ul id="goals-list">
+
+<li data-complete="false">Completar 33% restante de Prepa Abierta</li>
+
+<li data-complete="false">Trámite de INE y primer empleo</li>
+
+<li data-complete="false">Dominar algoritmos en C++</li>
+
+</ul>
+
+</section>
+
+
+
+<footer class="system-footer">
+
+<p>LUIS SYSTEM v5.0 | Personal Operating Panel</p>
+
+</footer>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
